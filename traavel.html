@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travelora - Travel Agency</title>
+    <link rel="stylesheet" href="Travel.css">
+</head>
+<body>
+
+    <!-- Website Header -->
+    <header>
+        <h1>Travelora</h1>
+        <p>Your Journey Begins Here!</p>
+
+        <!-- Navigation Menu -->
+        <nav>
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('destinations')">Destinations</button>
+            <button onclick="showPage('packages')">Packages</button>
+            <button onclick="showPage('details')">Details</button>
+            <button onclick="showPage('booking')">Booking</button>
+            <button onclick="showPage('blog')">Travel Blog</button>
+            <button onclick="showPage('contact')">Contact</button>
+        </nav>
+    </header>
+
+
+    <!-- PAGE 1: HOME -->
+    <section id="home" class="page">
+
+        <div class="home">
+            <h2>Explore The World With Us</h2>
+            <p>Discover beautiful places and enjoy amazing holidays.</p>
+            <button onclick="showPage('destinations')">
+                Explore Now
+            </button>
+        </div>
+
+        <div class="content">
+            <h2>Welcome to Travelora</h2>
+            <p>
+                Travelora helps you explore beautiful destinations,
+                plan your holidays and enjoy unforgettable journeys.
+            </p>
+
+            <h2>Popular Destinations</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=500">
+                    <h3>Jaipur</h3>
+                    <p>Explore the beautiful Pink City.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500">
+                    <h3>Bali</h3>
+                    <p>Enjoy beautiful beaches.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500">
+                    <h3>Paris</h3>
+                    <p>Discover the city of love.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PAGE 2: DESTINATIONS -->
+    <section id="destinations" class="page">
+
+        <div class="content">
+            <h2>Explore Our Destinations</h2>
+            <p>Choose your favourite place for your next trip.</p>
+
+            <button onclick="filterPlaces('all')">All</button>
+            <button onclick="filterPlaces('india')">India</button>
+            <button onclick="filterPlaces('international')">International</button>
+
+            <div class="cards">
+
+                <div class="card place india">
+                    <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=500">
+                    <h3>Jaipur, India</h3>
+                    <p>Famous for forts and royal palaces.</p>
+                </div>
+
+                <div class="card place india">
+                    <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500">
+                    <h3>Agra, India</h3>
+                    <p>Home of the famous Taj Mahal.</p>
+                </div>
+
+                <div class="card place international">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Beautiful beaches and nature.</p>
+                </div>
+
+                <div class="card place international">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500">
+                    <h3>Paris, France</h3>
+                    <p>Explore famous attractions.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PAGE 3: PACKAGES -->
+    <section id="packages" class="page">
+
+        <div class="content">
+            <h2>Our Travel Packages</h2>
+            <p>Choose a package according to your budget.</p>
+
+            <div class="cards">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=500">
+                    <h3>Jaipur Package</h3>
+                    <p>3 Days and 2 Nights</p>
+                    <h3>₹5,000</h3>
+                    <button onclick="showPage('booking')">Book Now</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500">
+                    <h3>Bali Package</h3>
+                    <p>5 Days and 4 Nights</p>
+                    <h3>₹25,000</h3>
+                    <button onclick="showPage('booking')">Book Now</button>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500">
+                    <h3>Paris Package</h3>
+                    <p>6 Days and 5 Nights</p>
+                    <h3>₹45,000</h3>
+                    <button onclick="showPage('booking')">Book Now</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PAGE 4: DESTINATION DETAILS -->
+    <section id="details" class="page">
+
+        <div class="content">
+            <h2>Discover Jaipur</h2>
+
+            <img class="detail-image"
+            src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=900">
+
+            <h3>About Jaipur</h3>
+            <p>
+                Jaipur is a beautiful city in Rajasthan.
+                It is famous for its forts, palaces, markets
+                and traditional culture.
+            </p>
+
+            <h3>Popular Places to Visit</h3>
+            <ul>
+                <li>Hawa Mahal</li>
+                <li>Amber Fort</li>
+                <li>City Palace</li>
+                <li>Jal Mahal</li>
+            </ul>
+
+            <h3>Best Time to Visit</h3>
+            <p>October to March is a popular time to visit Jaipur.</p>
+
+            <button onclick="showPage('booking')">Book Your Trip</button>
+        </div>
+    </section>
+
+
+    <!-- PAGE 5: BOOKING -->
+    <section id="booking" class="page">
+
+        <div class="content">
+            <h2>Book Your Journey</h2>
+            <p>Fill in your details to plan your trip.</p>
+
+            <form id="bookingForm">
+
+                <label>Your Name</label>
+                <input type="text" id="customerName" required>
+
+                <label>Email Address</label>
+                <input type="email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" required>
+
+                <label>Select Destination</label>
+                <select required>
+                    <option value="">Choose Destination</option>
+                    <option>Jaipur</option>
+                    <option>Agra</option>
+                    <option>Bali</option>
+                    <option>Paris</option>
+                </select>
+
+                <label>Travel Date</label>
+                <input type="date" required>
+
+                <button type="submit">Submit Booking</button>
+
+            </form>
+
+            <p id="bookingMessage"></p>
+        </div>
+    </section>
+
+
+    <!-- PAGE 6: TRAVEL BLOG -->
+    <section id="blog" class="page">
+
+        <div class="content">
+            <h2>Travel Blog</h2>
+            <p>Read interesting travel stories and tips.</p>
+
+            <input type="text" id="blogSearch"
+            placeholder="Search articles...">
+
+            <div class="cards">
+
+                <div class="card blog-card">
+                    <img src="https://images.unsplash.com/photo-1599661046827-dacff0c0f09a?w=500">
+                    <h3>Exploring Jaipur</h3>
+                    <p>Discover the beauty of Rajasthan.</p>
+                </div>
+
+                <div class="card blog-card">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500">
+                    <h3>A Trip to Bali</h3>
+                    <p>Enjoy beautiful beaches and nature.</p>
+                </div>
+
+                <div class="card blog-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=500">
+                    <h3>Beautiful Paris</h3>
+                    <p>Explore the famous attractions of Paris.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- PAGE 7: CONTACT -->
+    <section id="contact" class="page">
+
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Have a question? Send us a message.</p>
+
+            <form id="contactForm">
+
+                <label>Your Name</label>
+                <input type="text" required>
+
+                <label>Your Email</label>
+                <input type="email" required>
+
+                <label>Your Message</label>
+                <textarea rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <p id="contactMessage"></p>
+
+            <h3>Contact Information</h3>
+            <p>Email: travelora@example.com</p>
+            <p>Phone: +91 9876543210</p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Travelora. All Rights Reserved.</p>
+        <p>Explore More. Travel More. Live More.</p>
+    </footer>
+
+    <script src="travel.js"></script>
+
+</body>
+</html>
